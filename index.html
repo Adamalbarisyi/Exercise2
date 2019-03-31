@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Kalkulator By Muhammad Rifki Adam A</title>
+</head>
+
+<body>
+  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3" style="background-color:lightblue;"></div>
+            <div class="col-6" style="background-color:orange;">
+                <div class="container fluid flex-column d-flex h-100 justify-content-center">
+                    <div class="container">
+                         <h1 id="judul">Kalkulator</h1>
+                         <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-10">
+                            <form name="calculator">
+                                
+                                <table>
+                                    <tr>
+                                        <td><input type="button" id="clear" name="clear" value="c" onclick="hapus()"></td>
+                                        <td colspan="3"><input type="text" name="display" id="display" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+                                        <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+                                        <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+                                        <td><input type="button" class="operator" name="plus" value="+" onclick="tambah()">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+                                        <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+                                        <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+                                        <td><input type="button" class="operator" name="minus" value="-" onclick="kurang()">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+                                        <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+                                        <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+                                        <td><input type="button" class="operator" name="times" value="x" onclick="kali()">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="button" name="dot"value="." onClick="btndot()" /></td>
+                                        <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+                                        <td><input type="button" name="doit" value="="
+                                                onclick="hasil()"></td>
+                                        <td><input type="button" class="operator" name="div" value="/" onclick="bagi()">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="container">
+                            <h1></h1>
+                        </div>
+                        <div class="container">
+                            <h1></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3" style="background-color:lightblue;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
